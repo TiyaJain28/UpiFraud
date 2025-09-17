@@ -76,5 +76,5 @@ def is_valid_upi_id(upi_id):
         return False
     
     upi_id = str(upi_id).strip()
-    pattern = r'^[a-zA-Z0-9.\-_]{2,256}@[a-zA-Z]{2,64}$'
+    pattern = r'^[a-zA-Z0-9.\-_]+@[a-zA-Z]+$'
     return re.match(pattern, upi_id) is not None
